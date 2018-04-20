@@ -121,9 +121,10 @@ def draw_boxes_and_labels(
         category_index,
         instance_masks=None,
         keypoints=None,
-        max_boxes_to_draw=20,
-        min_score_thresh=.5,
+        max_boxes_to_draw=5,
+        min_score_thresh=.8,
         agnostic_mode=False):
+        #Draws a maximum of 20 boxes(max_boxes_to_draw = 20) in the frame and requires a score of atleast 50%(min_score_thresh = .5) to draw a box for an object.
     """Returns boxes coordinates, class names and colors
 
     Args:

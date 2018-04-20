@@ -1,0 +1,19 @@
+item {
+  id: 1
+  name: 'coke'
+}
+
+item {
+  id: 2
+  name: 'sprite'
+}
+
+item {
+  id: 3
+  name: 'dr_pepper'
+}
+
+item {
+  id: 4
+  name: 'orange_fanta'
+}

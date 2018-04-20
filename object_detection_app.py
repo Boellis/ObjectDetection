@@ -57,6 +57,30 @@ def detect_objects(image_np, sess, detection_graph):
         category_index,
         use_normalized_coordinates=True,
         line_thickness=8)
+    #-----------------------------------
+    # Return found objects
+    #print([category_index.get(i) for i in classes[0]])
+    #print(boxes.shape)
+    #print(num_detections)
+    #-----------------------------------
+    #print ([category_index.get(value) for index,value in enumerate(classes[0]) if scores[0,index] > 0.5])
+    # Format: [{'id': 1, 'name': 'person'}, {'id': 65, 'name': 'bed'}]
+
+    has_already_printed_sthg = False
+    for index,value in enumerate(classes[0]):
+        class_name = category_index[classes[0][0]]['name']
+        if scores[0,index] > 0.5:
+            if(class_name == 'person'):
+                if not has_already_printed_sthg: # Print this only once
+                    print('person')
+                    has_already_printed_sthg = True
+            elif(class_name == 'keyboard'):
+                if not has_already_printed_sthg: # Print this only once
+                    print('keyboard')
+                    has_already_printed_sthg = True
+            #print(category_index.get(value))
+            #print(category_index.get(index))
+            # Format: {'id': 65, 'name': 'bed'}
     return image_np
 
 
@@ -70,7 +94,12 @@ def worker(input_q, output_q):
             od_graph_def.ParseFromString(serialized_graph)
             tf.import_graph_def(od_graph_def, name='')
 
-        sess = tf.Session(graph=detection_graph)
+        #sess = tf.Session(graph=detection_graph)
+        config = tf.ConfigProto()
+        config.gpu_options.allow_growth = True    
+        sess = tf.Session(graph=detection_graph, config=config)
+
+        
 
     fps = FPS().start()
     while True:
