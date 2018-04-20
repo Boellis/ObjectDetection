@@ -9,10 +9,8 @@ Welcome to our page for Objection Detection and everything else that will be pre
 
 ## Table of contents
 
-Quick Start:
-* <a href='object_detection_tutorial.ipynb'>
-      Quick Start: Jupyter notebook for off-the-shelf inference</a><br>
-* <a href="g3doc/running_pets.md">Quick Start: Training a pet detector</a><br>
+Super Simple Guide to Training Your Own Dataset:
+* [Super Simple Guide](ObjectDetect/SuperSimpleGuide.md)
 
 Setup:
 * <a href='g3doc/installation.md'>Installation</a><br>
