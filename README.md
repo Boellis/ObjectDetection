@@ -10,7 +10,7 @@ Welcome to our page for Objection Detection and everything else that will be pre
 ## Table of contents
 
 Super Simple Guide to Training Your Own Dataset:
-* [Super Simple Guide](ObjectDetect/SuperSimpleGuide.md)
+* [Super Simple Guide](https://github.com/Boellis/ObjectDetect/blob/master/SuperSimpleGuide.md)
 
 Setup:
 * <a href='g3doc/installation.md'>Installation</a><br>
