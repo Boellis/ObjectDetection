@@ -1,32 +1,54 @@
-# Object-Detector-App
+# Object Detection Project
+Welcome to our page for Objection Detection and everything else that will be present on the page. I'm not sure what to put here yet, so we will fill all of this information with a ton of dummy text to take up space.If you feel like contributing, you probably already have accessed to the page anyways.
 
-A real-time object recognition application using [Google's TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection) and [OpenCV](http://opencv.org/).
+## Maintainers
 
-## Getting Started
-1. `conda env create -f environment.yml`
-2. `python object_detection_app.py`
-    Optional arguments (default value):
-    * Device index of the camera `--source=0`
-    * Width of the frames in the video stream `--width=480`
-    * Height of the frames in the video stream `--height=360`
-    * Number of workers `--num-workers=2`
-    * Size of the queue `--queue-size=5`
+* Brandon Ellis, github: [boellis](https://github.com/boellis)
+* Ryan Wickman, github: [rwickman](https://github.com/rwickman)
 
-## Tests
+
+## Table of contents
+
+Quick Start:
+* <a href='object_detection_tutorial.ipynb'>
+      Quick Start: Jupyter notebook for off-the-shelf inference</a><br>
+* <a href="g3doc/running_pets.md">Quick Start: Training a pet detector</a><br>
+
+Setup:
+* <a href='g3doc/installation.md'>Installation</a><br>
+* <a href='g3doc/configuring_jobs.md'>
+      Configuring an object detection pipeline</a><br>
+* <a href='g3doc/preparing_inputs.md'>Preparing inputs</a><br>
+
+Running:
+* <a href='g3doc/running_locally.md'>Running locally</a><br>
+* <a href='g3doc/running_on_cloud.md'>Running on the cloud</a><br>
+
+Extras:
+* <a href='g3doc/detection_model_zoo.md'>Tensorflow detection model zoo</a><br>
+* <a href='g3doc/exporting_models.md'>
+      Exporting a trained model for inference</a><br>
+* <a href='g3doc/defining_your_own_model.md'>
+      Defining your own model architecture</a><br>
+
+## Release information
+
+### April 20, 2018
+
+Release Includes:
+
+* Header:
+  * Entry 1
+* Header 2:
+  * Entry 2
+
+
+<b>Contributors</b>: Brandon Ellis & Ryan Wickman
+
 ```
-pytest -vs utils/
+"Speed/accuracy trade-offs for modern convolutional object detectors."
+Huang J, Rathod V, Sun C, Zhu M, Korattikara A, Fathi A, Fischer I, Wojna Z,
+Song Y, Guadarrama S, Murphy K, CVPR 2017
 ```
-
-## Requirements
-- [Anaconda / Python 3.5](https://www.continuum.io/downloads)
-- [TensorFlow 1.2](https://www.tensorflow.org/)
-- [OpenCV 3.0](http://opencv.org/)
-
-## Notes
-- OpenCV 3.1 might crash on OSX after a while, so that's why I had to switch to version 3.0. See open issue and solution [here](https://github.com/opencv/opencv/issues/5874).
-- Moving the `.read()` part of the video stream in a multiple child processes did not work. However, it was possible to move it to a separate thread.
-
-## Copyright
-
-See [LICENSE](LICENSE) for details.
-Copyright (c) 2017 [Dat Tran](http://www.dat-tran.com/).
+\[[link](https://arxiv.org/abs/1611.10012)\]\[[bibtex](
+https://scholar.googleusercontent.com/scholar.bib?q=info:l291WsrB-hQJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAWUIIlnPZ_L9jxvPwcC49kDlELtaeIyU-&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1)\]
