@@ -34,12 +34,13 @@ Extras:
 
 ### April 20, 2018
 
-Release Includes:
+Releases:
 
-* Header:
-  * Entry 1
-* Header 2:
-  * Entry 2
+* Release 1.0.0:
+  * Detect objects using OpenCV and return information from MySQL database
+  * Tutorial on how to train your own datasets for object detection
+* Release 1.0.1:
+  * Coming soon...
 
 
 <b>Contributors</b>: Brandon Ellis & Ryan Wickman
