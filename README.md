@@ -19,16 +19,6 @@ Required Software:
 * [MySQL](https://dev.mysql.com/downloads/)
 * [PyMySQL](https://github.com/PyMySQL/PyMySQL)
 
-Running:
-* <a href='g3doc/running_locally.md'>Running locally</a><br>
-* <a href='g3doc/running_on_cloud.md'>Running on the cloud</a><br>
-
-Extras:
-* <a href='g3doc/detection_model_zoo.md'>Tensorflow detection model zoo</a><br>
-* <a href='g3doc/exporting_models.md'>
-      Exporting a trained model for inference</a><br>
-* <a href='g3doc/defining_your_own_model.md'>
-      Defining your own model architecture</a><br>
 
 ## Release information
 
