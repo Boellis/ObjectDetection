@@ -12,11 +12,12 @@ Welcome to our page for Objection Detection and everything else that will be pre
 Super Simple Guide to Training Your Own Dataset:
 * [Super Simple Guide](https://github.com/Boellis/ObjectDetect/blob/master/SuperSimpleGuide.md)
 
-Setup:
-* <a href='g3doc/installation.md'>Installation</a><br>
-* <a href='g3doc/configuring_jobs.md'>
-      Configuring an object detection pipeline</a><br>
-* <a href='g3doc/preparing_inputs.md'>Preparing inputs</a><br>
+Required Software:
+* [Tensorflow](https://www.tensorflow.org/install/)
+* [Tensorflow Object Detection API](https://github.com/tensorflow/tensorflow)
+* [LabelImg](https://github.com/tzutalin/labelImg)
+* [MySQL](https://dev.mysql.com/downloads/)
+* [PyMySQL](https://github.com/PyMySQL/PyMySQL)
 
 Running:
 * <a href='g3doc/running_locally.md'>Running locally</a><br>
