@@ -23,10 +23,10 @@ Required Software:
 ## Release information
 
 Releases:
-# April 20, 2018
 * Release 1.0.0:
   * Detect objects using OpenCV and return information from MySQL database
   * Tutorial on how to train your own datasets for object detection
+  * April 20, 2018
 * Release 1.0.1:
   * Coming soon...
 
